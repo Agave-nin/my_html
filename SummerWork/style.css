@@ -1,0 +1,641 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, "PingFang SC", "Microsoft Yahei", sans-serif;
+    background-color: #dcdcdc;
+}
+
+:root {
+    --primary-color: #259cb9;
+    --secondary-color: #e3e3e3;
+    --text-color-lightest: #bb5149;
+    --text-color-darker: #2e2e2e;
+    --text-color-dark: #494949;
+    --text-color-gray: #8b8b8b;
+    --text-color-dark-gray: #727272;
+    --text-color-light-gray: #c6c6c6;
+    --backdrop-color: rgba(42, 42, 42, 0.69);
+}
+
+img {
+    width: 100%;
+}
+
+.sticky1 {
+    width: 100vw;
+    height: 80px;
+    display: grid;
+    padding: 0 40px;
+    grid-template-columns: 1fr;
+    align-items: center;
+    position: relative;
+    z-index: 200;
+    background-color: white;
+}
+
+.sticky2 {
+    margin-top: 4px;
+    width: 100vw;
+    height: 24px;
+    display: grid;
+    padding: 0 40px;
+    grid-template-columns: 1fr;
+    align-items: center;
+    position: relative;
+    z-index: 200;
+    background-color: white;
+}
+
+.pic{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color-lightest);
+    background-color: white;
+    margin-top: -80px;
+    margin-left: 100px;
+}
+
+header nav {
+    justify-self: center;
+    background-color: white;
+}
+
+header nav a {
+    color: var(--text-color-lightest);
+    text-decoration: none;
+    margin: 0px 24px;
+    background-color: white;
+}
+
+/*容器*/
+.glide {
+    position: relative;
+    top: 0px;
+    z-index: 50;
+}
+
+.glide__slide img,
+.glide__slide video{
+    width: 60vw;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.none{
+    width: 100%;
+    height: 7vh;
+}
+
+.glide__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    position: relative;
+    top: 10vh;
+    height: auto;
+    width: 100vw;
+    z-index: 50;
+    display: grid;
+    grid-template-rows: 30vh 30vh;
+}
+
+.school,
+.team{
+    display: grid;
+    grid-template-columns: 22vw 56vw 22vw;
+}
+
+.int{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.intcontent{
+    margin-top: 18px;
+    height: 144px;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    align-items: center;
+    background-color: white;
+}
+
+.intcontent b{
+    background-color: white;
+}
+
+.name1{
+    height: 36px;
+    width: 11vw;
+    margin-left: 12px;
+    border-radius: 16px;
+    background-color: rgba(181,28,40);
+    text-align:center;
+    text-align-last: justify;
+    text-align: justify;
+    padding: 6px 10px;
+}
+
+.rank{
+    width: 46vw;
+    margin-left: 5vw;
+    background-color: white;
+}
+
+.name2{
+    height: 36px;
+    width: 25vw;
+    margin-left: 12px;
+    border-radius: 16px;
+    background-color: rgba(181,28,40);
+    text-align:center;
+    text-align-last: justify;
+    text-align: justify;
+    padding: 6px 10px;
+}
+
+.intcontent a{
+    background-color: white;
+    margin-bottom: 16px;
+    margin-left: 5vw;
+    width: 120px;
+}
+
+/*非遗城市*/
+.choosecity{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    background-color: white;
+    box-shadow: 0px -7px 7px -7px #5E5E5E;
+    z-index: 1000;
+}
+
+.jiangsu{
+    height: auto;
+    width: 420px;
+    margin-left: 270px;
+    background-color: white;
+}
+
+.tip{
+    background-color: rgba(181,28,40);
+    color: whitesmoke;
+    margin: 8vw 12vw;
+    width: 8vw;
+    height: 28px;
+    text-align: center;
+    text-align-last: justify;
+    padding: 0 6px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-family:16px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;;
+}
+
+.suzhou{
+    margin-left: 890px;
+    margin-top: -170px;
+    background-color: white;
+}
+
+.suzhou a{
+    background:transparent;
+    text-decoration:none;
+}
+
+.wuxi{
+    margin-left: 848px;
+    margin-top: -50px;
+    background-color: white;
+}
+
+.wuxi a{
+    background:transparent;
+    text-decoration:none;
+}
+
+.changzhou{
+    margin-left: 810px;
+    margin-top: -15px;
+    background-color: white;
+}
+
+.changzhou a{
+    background:transparent;
+    text-decoration:none;
+}
+
+.zhenjiang{
+    margin-left: 790px;
+    margin-top: -50px;
+    background-color: white;
+}
+
+.zhenjiang a{
+    background:transparent;
+    text-decoration:none;
+}
+
+.nanjing{
+    margin-left: 742px;
+    margin-top: -20px;
+    background-color: white;
+}
+
+.nanjing a{
+    background:transparent;
+    text-decoration:none;
+}
+
+.smallhead{
+    font-size: 15px;
+    color: var(--text-color-dark-gray);
+    margin-left: 84px;
+    margin-top: 18px;
+}
+
+.cityname{
+    margin-left: 25vw;
+    margin-top: 5vh;
+    font-size: 24px;
+    height: 36px;
+    width: 84px;
+    padding: 0 12px;
+    background-color: var(--text-color-lightest);
+    text-align: center;
+    text-align-last: justify;
+    border-radius: 18px;
+}
+
+.production{
+    margin-left: 32vw;
+    font-size: 18px;
+}
+
+.production li{
+    margin-top: 18px;
+    width: 120px;
+}
+
+.realcity{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.map{
+    height: 720px;
+    width: auto;
+}
+
+.map img{
+    height: 720px;
+    width: auto;
+    margin-top: -100px;
+}
+
+.re{
+    margin-left: 8vw;
+}
+
+.jieshao{
+    margin: 80px 240px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 12px 20px;
+}
+
+.biaoti{
+    height: 36px;
+    width: 11vw;
+    margin-left: 12px;
+    border-radius: 16px;
+    background-color: rgba(181,28,40);
+    text-align:center;
+    text-align-last: justify;
+    text-align: justify;
+    padding: 6px 10px;
+}
+
+.neirong{
+    background-color: white;
+    border-radius: 20px;
+    padding: 6px 10px;
+    margin-top: 18px;
+}
+
+.click1{
+    margin-top: -540px;
+    margin-left: 1085px;
+    width: 42px;
+    height:64px;
+    opacity: 0;
+}
+
+.click2{
+    margin-top: -140px;
+    margin-left: 1141px;
+    width: 42px;
+    height:64px;
+    opacity: 0;
+}
+
+.click3{
+    margin-top: 60px;
+    margin-left: 1172px;
+    width: 42px;
+    height:64px;
+    opacity: 0;
+}
+
+.click4{
+    margin-top: 120px;
+    margin-left: 840px;
+    width: 42px;
+    height: 42px;
+    opacity: 0;
+}
+
+.chclick1{
+    margin-top: -386px;
+    margin-left: 945px;
+    width: 18px;
+    height:64px;
+    opacity: 0;
+}
+
+.chclick2{
+    margin-top: -130px;
+    margin-left: 880px;
+    width: 42px;
+    height:42px;
+    opacity: 0;
+}
+
+.chclick3{
+    margin-top: -132px;
+    margin-left: 1100px;
+    width: 42px;
+    height: 42px;
+    opacity: 0;
+}
+
+.chclick4{
+    margin-top: -125px;
+    margin-left: 1105px;
+    width: 42px;
+    height: 42px;
+    opacity: 0;
+}
+
+.suclick1{
+    margin-top: -570px;
+    margin-left: 1055px;
+    width: 42px;
+    height:42px;
+    opacity: 0;
+}
+
+.suclick2{
+    margin-top: 75px;
+    margin-left: 985px;
+    width: 42px;
+    height:42px;
+    opacity: 0;
+}
+
+.suclick3{
+    margin-top: 40px;
+    margin-left: 1030px;
+    width: 42px;
+    height:42px;
+    opacity: 0;
+}
+
+.suclick4{
+    margin-top: -120px;
+    margin-left: 1090px;
+    width: 42px;
+    height:42px;
+    opacity: 0;
+}
+
+.zhclick1{
+    margin-top: -550px;
+    margin-left: 935px;
+    width: 42px;
+    height: 42px;
+    opacity: 0;
+}
+
+.zhclick2{
+    margin-top: 0px;
+    margin-left: 1100px;
+    width: 42px;
+    height:42px;
+    opacity: 0;
+}
+
+.zhclick3{
+    margin-top: -160px;
+    margin-left: 1200px;
+    width: 42px;
+    height: 42px;
+    opacity: 0;
+}
+
+.naclick1{
+    margin-top: -545px;
+    margin-left: 980px;
+    width: 42px;
+    height:42px;
+    opacity: 0;
+}
+
+.naclick2{
+    margin-top: 32px;
+    margin-left: 968px;
+    width: 42px;
+    height:42px;
+    opacity: 0;
+}
+
+.naclick3{
+    margin-top: 4px;
+    margin-left: 1050px;
+    width: 42px;
+    height:42px;
+    opacity: 0;
+}
+
+.naclick4{
+    margin-top: -280px;
+    margin-left: 1000px;
+    width: 42px;
+    height: 42px;
+    opacity: 0;
+}
+
+.click1:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.click2:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.click3:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.click4:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.chclick1:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.chclick2:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.chclick3:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.chclick4:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.suclick1:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.suclick2:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.suclick3:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.suclick4:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.zhclick1:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.zhclick2:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.zhclick3:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.naclick1:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.naclick2:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.naclick3:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.naclick4:hover{
+    scale: 1.1;
+    opacity: 0.2;
+    box-shadow:0 0 10px 15px #0CC;
+    background-color: #0CC;
+    border-radius: 12px;
+}
+
+.tran{
+    opacity: 0;
+}
